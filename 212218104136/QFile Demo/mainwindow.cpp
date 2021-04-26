@@ -24,7 +24,7 @@ void MainWindow::on_pushButton_clicked()
         QFile file(files);
         if(!file.open(QFile::WriteOnly|QFile::Text))
         {
-            QMessageBox::warning(this,"Sandhya 212218104146","File not open");
+            QMessageBox::warning(this,"Raphael 212218104136","File not open");
         }
         QTextStream out(&file);
         QString text=ui->textEdit->toPlainText();
@@ -40,7 +40,7 @@ void MainWindow::on_pushButton_2_clicked()
         QFile file(files);
         if(!file.open(QFile::ReadOnly|QFile::Text))
         {
-            QMessageBox::warning(this,"Sandhya 212218104146","File not open");
+            QMessageBox::warning(this,"Raphael 212218104136","File not open");
         }
         QTextStream in(&file);
         QString text=in.readAll();
